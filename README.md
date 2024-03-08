@@ -1,11 +1,11 @@
 
 # 1. 개발환경 
 
-운영체제(OS) - Eclipse
+개발툴(IDE)- Eclipse
 
-데이터베이스 관리 시스템 (DBMS) - Oracle
+데이터베이스 관리 (DBMS) - Oracle
 
-웹 애플리케이션 서버 (WAS) - Tomcat9
+웹 애플리케이션 (WAS) - Tomcat9
 
 !dependency 추가 
 - JSTL(JSP 표준 태그 라이브러리)

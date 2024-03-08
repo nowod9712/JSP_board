@@ -9,6 +9,7 @@ CREATE USER webdb IDENTIFIED BY 12345;
 GRANT CONNECT, RESOURCE TO webdb;
 
 2. webdb로 로그인
+
 ![image](https://github.com/nowod9712/JSP_board/assets/154123670/76fda530-856c-429e-a809-38d982dafcfc)
 
 

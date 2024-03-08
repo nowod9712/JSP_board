@@ -186,7 +186,7 @@ public class BoardDAO {
 			
 		}
         // 카운터 증가
-	public int updateCnt(int num) {
+		public int updateCnt(int num) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		String query = "update board set cnt=cnt+1 where num=?";
@@ -217,8 +217,38 @@ public class BoardDAO {
 		return ret;
 		
 	}
-
-	//삭제(D)
-	
-	
+   
+		//삭제(D)
+		public int delete(int num) {
+			Connection con = null;
+			PreparedStatement pstmt = null;
+			String query = "delete from board where num=?";
+			int ret = -1;
+			try {
+				con = ju.getConnection();
+				pstmt = con.prepareStatement(query);
+				pstmt.setInt(1, num);
+				ret = pstmt.executeUpdate();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}finally {
+				if(pstmt != null) {
+					try {
+						pstmt.close();	
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+				if(con != null) {
+					try {
+						con.close();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+			return ret;
+			
+		}
+		
 }

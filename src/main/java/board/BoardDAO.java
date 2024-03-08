@@ -56,7 +56,7 @@ public class BoardDAO {
 		Connection con = null;
 		Statement stmt = null;
 		ResultSet rs = null;
-		String query = "select num, title, writer, content, regdate, cnt from board";
+		String query = "select num, title, writer, content, regdate, cnt from board order by num desc";
 		List<BoardVO> ls = new ArrayList<>();
 		try {
 			con = ju.getConnection();

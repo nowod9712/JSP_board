@@ -50,4 +50,5 @@
         --삭제
         delete from board where num=1;
 
+        --반드시 커밋할 것!!
         commit;    

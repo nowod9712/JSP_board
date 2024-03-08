@@ -1,19 +1,19 @@
-# 0. 학습 목표
+## :exclamation: 학습 목표
 - 초기 개발 환경 구축
 - 컨넥션 풀을 이용한 DB 연동
 - JSP로 만드는 CRUD 처리 구문 연습
 
-## 1. 개발환경 
+## :electric_plug: 개발환경 
 
-개발툴(IDE)- Eclipse
+ **-개발툴(IDE)- Eclipse**
 
-데이터베이스 관리 (DBMS) - Oracle
+ **-데이터베이스 관리 (DBMS) - Oracle**
 
-웹 애플리케이션 (WAS) - Tomcat9
+ **-웹 애플리케이션 (WAS) - Tomcat9**
 
-!dependency 추가 
-- JSTL(JSP 표준 태그 라이브러리)
-- JDBC(데이터베이스 연동 및 쿼리 실행을 위한 자바API)
+**:bulb: dependency 추가** 
+**- JSTL(JSP 표준 태그 라이브러리)**
+**- JDBC(데이터베이스 연동 및 쿼리 실행을 위한 자바API)**
 
 #### 컨넥션풀 설정 - 톰캣 conf 폴더에 있는 context.xml 파일 맨 하다 <Manager  --> 아래 추가
 
@@ -29,7 +29,7 @@
              maxWait="-1" />
 
 
-## 2. 파일 구성
+## :open_file_folder: 파일 구성
 
 #### 메인 페이지
   ● index.jsp
@@ -60,7 +60,7 @@
 
 
 
-## 3. 게시판 만들기 - SQL문  
+## :clipboard: 게시판 만들기 - SQL문  
 
 
 

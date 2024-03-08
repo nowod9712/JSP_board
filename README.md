@@ -1,5 +1,9 @@
+# 0. 학습 목표
+- 초기 개발 환경 구축
+- 컨넥션 풀을 이용한 DB 연동
+- JSP로 만드는 CRUD 처리 구문 연습
 
-# 1. 개발환경 
+## 1. 개발환경 
 
 개발툴(IDE)- Eclipse
 
@@ -24,7 +28,39 @@
              maxActive="50"
              maxWait="-1" />
 
-# 2. 게시판 만들기 - SQL문  
+
+## 2. 파일 구성
+
+#### 메인 페이지
+  ● index.jsp
+
+#### 게시글 목록
+  ● list.jsp
+
+#### 게시글 등록
+  ● regist.jsp
+
+
+  ● registForm.jsp
+
+#### 게시물 내용(detail)
+  ● boardDetail.jsp
+
+#### 수정
+  ● edit.jsp
+
+
+  ● editForm.jsp
+
+#### 삭제
+● delete.jsp
+
+
+● deleteForm.jsp
+
+
+
+## 3. 게시판 만들기 - SQL문  
 
 
 

@@ -1,5 +1,30 @@
 
-# 게시판 만들기 - SQL문  
+# 1. 개발환경 
+
+운영체제(OS) - Eclipse
+
+데이터베이스 관리 시스템 (DBMS) - Oracle
+
+웹 애플리케이션 서버 (WAS) - Tomcat9
+
+!dependency 추가 
+- JSTL(JSP 표준 태그 라이브러리)
+- JDBC(데이터베이스 연동 및 쿼리 실행을 위한 자바API)
+
+#### 컨넥션풀 설정 - 톰캣 conf 폴더에 있는 context.xml 파일 맨 하다 <Manager  --> 아래 추가
+
+            <Resource
+             name="jdbc/oracle"
+             auth = "Container"
+             type="javax.sql.DataSource"
+             driverClassName="oracle.jdbc.OracleDriver"
+             url="jdbc:oracle:thin:@localhost:1521:XE"
+             username="webdb"
+             password="12345"
+             maxActive="50"
+             maxWait="-1" />
+
+# 2. 게시판 만들기 - SQL문  
 
 
 
